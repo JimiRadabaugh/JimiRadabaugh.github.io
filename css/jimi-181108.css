@@ -1,0 +1,351 @@
+/*------------------------------------------------------------------------
+# Base Styles
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Layout
+-----------------------------------------------*/
+main {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+	.nav {
+		float: left;
+		height: 100%;
+		position: fixed;
+		border-right: 1px solid #ccc;
+		margin-left: -15px;
+		padding-top: 1.25rem;
+		width: 15%;
+	}
+	main {
+		float: left;
+		margin-left: 15%;
+	}
+}
+
+/*-----------------------------------------------
+## Core
+-----------------------------------------------*/
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+.row:after,
+.row:before {
+	content: " ";
+	display: table;
+}
+html {
+	font-family: 'Nunito', sans-serif;
+	font-size: 16px;
+	line-height: 1.65;
+	color: rgba(0,0,0,0.8);
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	font-size: 1rem;
+	line-height: inherit;
+	color: inherit;
+	padding-top: 0;
+	counter-reset: captions;
+}
+p {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+ul, ol, dl {
+	margin-top: 0;
+	margin-bottom: 1rem;
+}
+
+/*-----------------------------------------------
+## Nav
+-----------------------------------------------*/
+.navbar-toggle {
+	border: 1px solid #555;
+}
+.navbar-toggle .icon-bar {
+	background-color: #555;
+}
+.nav {
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility;
+	font-size: .9rem;
+	font-weight: 400;
+	line-height: 1.25;
+	text-align: center;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+	background-color: transparent;
+	color: #005181;
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+	.nav {
+		text-align: left;
+	}
+	.nav > li > a:hover,
+	.nav > li > a:focus {
+		background-color: #f3f3f3;
+		color: #005181;
+	}
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+	.nav > li > a {
+		padding-left: 30px;
+	}
+}
+
+/*-----------------------------------------------
+## Headings
+-----------------------------------------------*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', sans-serif;
+	text-rendering: optimizeLegibility;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #313131;
+	margin-bottom: .5rem;
+}
+h1 {
+	font-size: 2.25rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+}
+h2 {
+	margin-top: 1rem;
+	font-size: 1.5rem;
+}
+h3 {
+	margin-top: 1.5rem;
+	font-size: 1.25rem;
+}
+h4, h5, h6 {
+	margin-top: 1rem;
+	font-size: 1rem;
+}
+
+/*-----------------------------------------------
+## Links
+-----------------------------------------------*/
+a,
+h3.article-title a:hover {
+	color: #0095eb;
+	text-decoration: none;
+	transition: color 0.6s ease;
+}
+a:hover,
+a:focus {
+	color: #005181;
+}
+a:focus {
+	outline: 0; 
+}
+
+/*-----------------------------------------------
+## Lists
+-----------------------------------------------*/
+.fa-ul i {
+	padding-top: 3px;
+}
+
+/*-----------------------------------------------
+## Media
+-----------------------------------------------*/
+img,
+video {
+	height: auto;
+	max-width: 100%;
+	display: block;
+}
+.img-responsive {
+	/* Extend Bootstrap declaration with centering */
+	margin: 0 auto;
+}
+
+/*------------------------------------------------------------------------
+# Home Page
+------------------------------------------------------------------------*/
+
+/*-----------------------------------------------
+## Sections
+-----------------------------------------------*/
+.home-section {
+	padding: 25px 0;
+}
+.section-heading h1 {
+	margin: 0 0 10px 0;
+}
+.section-heading p {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 1.1rem;
+	color: #b2b2b2;
+}
+
+/*-----------------------------------------------
+## Biography
+-----------------------------------------------*/
+#profile {
+	text-align: center;
+	padding: 30px 10px;
+	position: relative;
+}
+#profile .portrait {
+	width: 200px;
+	height: 200px;
+	margin: 0 auto;
+}
+#profile .portrait img {
+	border: none;
+}
+#profile .portrait-title h2 {
+	font-size: 1.55em;
+	font-weight: 500;
+	color: #000;
+	margin: 20px 0 10px 0;
+}
+#profile .portrait-title h3 {
+	font-size: 1.1em;
+	font-weight: 300;
+	color: #313131;
+	margin: 0px 0 10px 0;
+}
+#profile ul.social-icon {
+	display: inline-flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	list-style: none;
+	padding: 0;
+	margin-top: 30px;
+}
+#profile .social-icon li {
+	margin-right: 10px;
+}
+#profile .social-icon li:last-of-type {
+	margin-right: 0;
+}
+#profile .social-icon li:hover {
+	transform: scale(1.2)
+}
+
+/* Text */
+.big-icon {
+	font-size: 2rem;
+}
+ul.ul-edu {
+	list-style: none;
+}
+ul.ul-edu li {
+	position: relative;
+	padding: 0px 15px 4px 3px;
+}
+ul.ul-edu li .description p {
+	margin: 0;
+}
+
+/*-----------------------------------------------
+## Custom
+-----------------------------------------------*/
+.section {
+	border-top: 1px solid #ccc;
+	padding-top: 25px;
+}
+.caption {
+	margin-top: 1.0rem;
+	font-size: 0.8rem;
+}
+img {
+	border: 1px solid #ddd;
+	margin: 10px 0;
+}
+img.brand {
+	border: none;
+}
+.color-theory > div:nth-child(5) {
+	clear: both;
+}
+.whitespace-row {
+	height: 0;
+	margin-top: -10px;
+}
+.whitespace-1x {
+	height: 5px;
+}
+.whitespace-2x {
+	height: 10px;
+}
+.whitespace-3x {
+	height: 15px;
+}
+.whitespace-4x {
+	height: 20px;
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+	img {
+		margin: 0;
+	}
+	.date-right {
+		text-align: right;
+	}
+	.color-theory > div:nth-child(5) {
+		clear: none;
+	}
+	.whitespace-row {
+		height: 15px;
+		margin-top: 0;
+	}
+	.whitespace-1x {
+		height: 25px;
+	}
+	.whitespace-2x {
+		height: 50px;
+	}
+	.whitespace-3x {
+		height: 75px;
+	}
+	.whitespace-4x {
+		height: 100px;
+	}
+}
+
+/*-----------------------------------------------------------------------
+# Footer
+------------------------------------------------------------------------*/
+footer {
+	clear: both;
+	padding: 5rem 0 1rem;
+	width: 100%;
+}
+footer p {
+	font-size: .9rem;
+	text-align: center;
+}
+.site-footer,
+footer a#back_to_top i {
+	color: #899596;
+}
+footer a#back_to_top i {
+	margin-top: -5px;
+}
+footer {
+	margin: -80px 0 0;
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+	footer {
+		margin-top: 0;
+	}
+}
