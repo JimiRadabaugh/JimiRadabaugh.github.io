@@ -218,7 +218,7 @@ video {
 	font-size: 1.1em;
 	font-weight: 300;
 	color: #313131;
-	margin: 0px 0 10px 0;
+	margin: 0 0 10px 0;
 }
 #profile ul.social-icon {
 	display: inline-flex;
@@ -247,7 +247,7 @@ ul.ul-edu {
 }
 ul.ul-edu li {
 	position: relative;
-	padding: 0px 15px 4px 3px;
+	padding: 0 15px 4px 3px;
 }
 ul.ul-edu li .description p {
 	margin: 0;
@@ -270,6 +270,9 @@ img {
 }
 img.brand {
 	border: none;
+}
+blockquote {
+	font-size: 1rem;
 }
 .color-theory > div:nth-child(5) {
 	clear: both;
