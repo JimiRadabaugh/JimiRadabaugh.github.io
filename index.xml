@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jimi Radabaugh</title>
-    <link>//jimi-radabaugh.com/</link>
+    <link>//jimiradabaugh.dev/</link>
     <description>Recent content on Jimi Radabaugh</description>
     <generator>Hugo -- gohugo.io</generator>
-    <copyright>&amp;copy; 2020 Jimi Radabaugh</copyright>
-    <lastBuildDate>Sat, 07 March 2020 00:00:00 +0000</lastBuildDate>
+    <copyright>&amp;copy; 2024 Jimi Radabaugh</copyright>
+    <lastBuildDate>Sat, 18 May 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
   </channel>
